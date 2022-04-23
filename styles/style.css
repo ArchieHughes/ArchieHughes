@@ -32,26 +32,58 @@ body {
 
 #archie1 {
 	border: solid 1px black;
-	padding-top: 20;
-	width: 80px;
-	height: 80px;
+	width: 75px;
+	height: 75px;
 	object-fit: cover;
 	object-position: 100% 1;
 	border-radius: 50%;
+	margin-top: 11px;
 	display: block;
 	margin-left: auto;
-	left: 10%;
-	top: 50%;
-	position: absolute;
-	transform: translate(-50%, -50%);
 	margin-right: auto;
 }
 
+ul {
+	margin-left: 25px;
+}
+
+button {
+	background-color: rgb(70, 156, 0);
+	margin-left: 25px;
+	color: white;
+	border-radius: 5px;
+	border: 1px solid black;
+	transition: 200ms;
+}
+
+button:hover {
+	background-color: darkgreen;
+	cursor: pointer;
+}
+
+p {
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+#asdap {
+	display: none;
+}
+
+h2 {
+	text-decoration: underline;
+	margin-left: 25px;
+	font-size: 17px;
+	text-transform: uppercase;
+}
+
 h1 {
-	font-size: 200%;
+	text-transform: uppercase;
+	font-size: 20px;
+	left: 50%;
+	top: 72%;
 	position: absolute;
-	top: 10px;
-	right: 35px;
+	transform: translate(-50%, -50%);
 }
 
 #titleindiv {
@@ -60,6 +92,24 @@ h1 {
 	top: 0;
 	right: 0;
 	left: 0;
-	height: 100px;
+	height: 130px;
+	padding: 5px;
 	background-color: rgb(91, 91, 91);
+}
+
+#left {
+	
+	width: 50%;
+	top: 140px;
+	bottom: 0;
+	position: absolute;
+}
+
+#right {
+	
+	width: 50%;
+	right: 0;
+	top: 140px;
+	bottom: 0;
+	position: absolute;
 }
