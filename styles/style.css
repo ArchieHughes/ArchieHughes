@@ -45,15 +45,20 @@ body {
 
 ul {
 	margin-left: 25px;
+	display: none;
+	font-size: 12px;
 }
 
 button {
+	display: block;
 	background-color: rgb(70, 156, 0);
 	margin-left: 25px;
 	color: white;
 	border-radius: 5px;
 	border: 1px solid black;
 	transition: 200ms;
+	margin-top: 10px;
+	padding: 5px;
 }
 
 button:hover {
@@ -62,12 +67,10 @@ button:hover {
 }
 
 p {
+	font-size: 12px;
+	display: none;
 	margin-right: 25px;
 	margin-left: 25px;
-}
-
-#asdap {
-	display: none;
 }
 
 h2 {
@@ -84,6 +87,12 @@ h1 {
 	top: 72%;
 	position: absolute;
 	transform: translate(-50%, -50%);
+}
+
+h3 {
+	margin-left: 25px;
+	margin-bottom: 0;
+	display: none;
 }
 
 #titleindiv {
@@ -106,10 +115,18 @@ h1 {
 }
 
 #right {
-	
 	width: 50%;
 	right: 0;
 	top: 140px;
 	bottom: 0;
 	position: absolute;
+}
+
+#linemiddle {
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%);
+	width: 1px;
+	height: 100%;
+	background-color: rgb(91, 91, 91);
 }
