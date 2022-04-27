@@ -20,28 +20,81 @@
 		</div>
 
 		<div id="left">
-			<h2>Work Experience</h2>
-			<button id="asdabutton" onclick="asdashow()">Store Assistant</button>
-			<button id="dayporterbutton" onclick="dayportershow()">Day Porter</button>
-			<button id="drumlessonbutton" onclick="drumlessonshow()">Drum lessons</button>
+			<h2 onclick="expandwork()">Work Experience</h2>
+			<div id="workbuttons">
+				<button id="asdabutton" onclick="asdashow()">Store Assistant</button>
+				<button id="dayporterbutton" onclick="dayportershow()">Day Porter</button>
+				<button id="drumlessonbutton" onclick="drumlessonshow()">Drum lessons</button>
+			</div>
+
+			<h2 onclick="expandskills()">Skills</h2>
+			<div id="skillsbuttons">
+				<button id="gymbutton" onclick="gymshow()">Gym</button>
+				<button id="musicbutton" onclick="musicshow()">Music</button>
+				<button id="surfingbutton" onclick="surfingshow()">Surfing</button>
+				<button id="drumsbutton" onclick="drumsshow()">Drumming</button>
+			</div>
 		</div>
 
 		<div id="right">
-			<h3 id="asdatitle">Store Assistant</h3>
-			<p id="asdap">In 2021 I worked as a store assistant in Asda in replacement of staff who were having to isolate.</p>
+			<div id="divasdahide">
+				<h3>Store Assistant</h3>
+				<p>In 2021 I worked as a store assistant in Asda in replacement of staff who were having to isolate.</p>
+			</div>
 
-			<h3 id="dayportertitle">Day Porter</h3>
-			<p id="dayporterp">From June 2021 to April 2022 I worked in the grand hotel as a day porter. My responsibilities included:</p>
-			<ul id="dayporterul">
-				<li>Taking luggage to and from rooms.</li>
-				<li>Delivering room service.</li>
-				<li>Making beds.</li>
-				<li>Moving furn8iture.</li>
-				<li>Greeting guests.</li>
-			</ul>
+			<div id="divdayporterhide">
+				<h3>Day Porter</h3>
+				<p>From June 2021 to April 2022 I worked in the grand hotel as a day porter. My responsibilities included:</p>
+				<ul id="dayporterul">
+					<li>Taking luggage to and from rooms.</li>
+					<li>Delivering room service.</li>
+					<li>Making beds.</li>
+					<li>Moving furniture.</li>
+					<li>Greeting guests.</li>
+				</ul>
+			</div>
 
-			<h3 id="drumlessontitle">Drum lessons</h3>
-			<p id="drumlessonp">Need to write</p>
+			<div id="divdrumlessonhide">
+				<h3>Drum lessons</h3>
+				<p>For over a month I have been making money from teaching drum lessons to a 8 year old boy for 30 minutes to an hour a week. I have been teaching him: </p>
+				<ul>
+					<li>Rudeaments.</li>
+					<li>8 beat.</li>
+					<li>4 beat.</li>
+				</ul>
+				<p>So far from this experience I have learnt: </p>
+				<ul>
+					<li>Social skills.</li>
+					<li>Teaching skills.</li>
+				</ul>
+			</div>
+
+			<div id="divgymhide">
+				<h3>Gym</h3>
+				<p>I follow a strict three day gym training program to build up my strength and provide me with muscle. I have learnt:</p>
+				<ul>
+					<li>Discipline.</li>
+					<li>Consistency.</li>
+				</ul>
+			</div>
+
+			<div id="divmusichide">
+				<h3>Music</h3>
+				<p>Currently I am studying an Extended Level 3 Diploma in Music. Leading up to this course I have been playing Drums and been interested in Music for practically my whole life. From a long line of Music history in my family I feel Music comes naturally. I currently have skills in:</p>
+				<ul>
+					<li>Reading Music notation.</li>
+					<li>Reading Drum score.</li>
+				</ul>
+			</div>
+
+			<div id="divsurfinghide">
+				<h3>Surfing</h3>
+			</div>
+
+			<div id="divdrumshide">
+				<h3>Drumming.</h3>
+				<p>I play drums.</p>
+			</div>
 		</div>
 	</div>
 

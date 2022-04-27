@@ -45,19 +45,19 @@ body {
 
 ul {
 	margin-left: 25px;
-	display: none;
 	font-size: 12px;
 }
 
 button {
+	width: 45%;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
 	display: block;
 	background-color: rgb(70, 156, 0);
-	margin-left: 25px;
 	color: white;
 	border-radius: 5px;
 	border: 1px solid black;
-	transition: 200ms;
-	margin-top: 10px;
 	padding: 5px;
 }
 
@@ -68,16 +68,22 @@ button:hover {
 
 p {
 	font-size: 12px;
-	display: none;
 	margin-right: 25px;
 	margin-left: 25px;
 }
 
 h2 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	text-align: center;
 	text-decoration: underline;
-	margin-left: 25px;
-	font-size: 17px;
+	font-size: 16px;
 	text-transform: uppercase;
+}
+
+h2:hover {
+	cursor: pointer;
 }
 
 h1 {
@@ -92,7 +98,6 @@ h1 {
 h3 {
 	margin-left: 25px;
 	margin-bottom: 0;
-	display: none;
 }
 
 #titleindiv {
@@ -107,7 +112,6 @@ h3 {
 }
 
 #left {
-	
 	width: 50%;
 	top: 140px;
 	bottom: 0;
@@ -129,4 +133,9 @@ h3 {
 	width: 1px;
 	height: 100%;
 	background-color: rgb(91, 91, 91);
+}
+
+
+#workbuttons, #skillsbuttons, #divdrumlessonhide, #divdayporterhide, #divasdahide, #divgymhide, #divmusichide, #divsurfinghide, #divdrumshide {
+	display: none;
 }
