@@ -13,7 +13,7 @@ body {
 	transform: translate(-50%, -50%);
 	width: 90%;
 	max-width: 550px;
-	height: 70%;
+	height: 80%;
 }
 
 #backimg2 {
@@ -136,7 +136,37 @@ h3 {
 	background-color: rgb(91, 91, 91);
 }
 
-
 #workbuttons, #skillsbuttons, #divdrumlessonhide, #divdayporterhide, #divasdahide, #divgymhide, #divmusichide, #divsurfinghide, #divdrumshide {
 	display: none;
+}
+
+#questionimg {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	transition: 200ms;
+}
+
+#questionimg:hover {
+	cursor: pointer;
+	width: 25px;
+	height: 25px;
+}
+
+#navigate {
+	text-align: center;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	display: none;
+	background-color: rgb(40, 45, 50);
+	color: white;
+	padding: 20px;
+	border-radius: 10px;
+	width: 50%;
+	position: fixed;
+	z-index: 999;
 }

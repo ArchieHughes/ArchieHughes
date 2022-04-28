@@ -259,3 +259,14 @@ function drumsshow() {
 		surfingbutton.innerHTML = 'Surfing';
 	}
 }
+
+function questionshow() {
+	const navigate = document.getElementById('navigate');
+	
+
+	if(navigate.style.display == 'block') {
+		navigate.style.display = 'none';
+	} else {
+		navigate.style.display = 'block';
+	}
+}
