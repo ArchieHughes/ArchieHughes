@@ -88,9 +88,11 @@ function expandwork() {
 		workbuttons.style.display = 'block';
 	}
 
-	if(skillsbuttons.style.display == 'block') {
+	if(skillsbuttons.style.display == 'block' || educationbuttons.style.display == 'block') {
 		closeskills();
+		closeeducation();
 		skillsbuttons.style.display = 'none';
+		educationbuttons.style.display = 'none';
 	}
 }
 
@@ -104,10 +106,40 @@ function expandskills() {
 		skillsbuttons.style.display = 'block';
 	}
 
-	if(workbuttons.style.display == 'block') {
+	if(workbuttons.style.display == 'block' || educationbuttons.style.display == 'block') {
 		closework();
+		closeeducation();
+		workbuttons.style.display = 'none';
+		educationbuttons.style.display = 'none';
+	}
+}
+
+function expandeducation() {
+	if(educationbuttons.style.display == 'block') {
+		educationbuttons.style.display = 'none';
+		closeeducation();
+	} else {
+		educationbuttons.style.display = 'block';
+	}
+
+	if(skillsbuttons.style.display == 'block' || workbuttons.style.display == 'block') {
+		closeskills();
+		closework();
+		skillsbuttons.style.display = 'none';
 		workbuttons.style.display = 'none';
 	}
+}
+
+function closeeducation() {
+	secondarybutton.innerHTML = 'GCSEs';
+	divsecondaryhide.style.display = 'none';
+	secondarybutton.style.backgroundColor = 'rgb(70, 156, 0)';
+	collegebutton.innerHTML = 'A-Levels';
+	divcollegehide.style.display = 'none';
+	collegebutton.style.backgroundColor = 'rgb(70, 156, 0)';
+	musicgradesbutton.innerHTML = 'Music Grades';
+	divmusicgradeshide.style.display = 'none';
+	musicgradesbutton.style.backgroundColor = 'rgb(70, 156, 0)';
 }
 
 function closework() {
@@ -263,10 +295,86 @@ function drumsshow() {
 function questionshow() {
 	const navigate = document.getElementById('navigate');
 	
-
 	if(navigate.style.display == 'block') {
 		navigate.style.display = 'none';
 	} else {
 		navigate.style.display = 'block';
+	}
+}
+
+const secondarybutton = document.getElementById('secondarybutton');
+const divsecondaryhide = document.getElementById('divsecondaryhide');
+
+const collegebutton = document.getElementById('collegebutton');
+const divcollegehide = document.getElementById('divcollegehide');
+
+const musicgradesbutton = document.getElementById('musicgradesbutton');
+const divmusicgradeshide = document.getElementById('divmusicgradeshide');
+
+const educationbuttons = document.getElementById('educationbuttons');
+
+function secondaryshow() {
+	if(divsecondaryhide.style.display == 'block') {
+		divsecondaryhide.style.display = 'none';
+		secondarybutton.innerHTML = 'GCSEs';
+		secondarybutton.style.backgroundColor = 'rgb(70, 156, 0)';
+	} else {
+		divsecondaryhide.style.display = 'block';
+		secondarybutton.innerHTML = 'Collapse';
+		secondarybutton.style.backgroundColor = 'darkkhaki';
+	}
+
+	if(collegebutton.innerHTML == 'Collapse' || musicgradesbutton.innerHTML == 'Collapse') {
+		divcollegehide.style.display = 'none';
+		collegebutton.innerHTML = 'A-Levels';
+		collegebutton.style.backgroundColor = 'rgb(70, 156, 0)';
+
+		musicgradesbutton.style.backgroundColor = 'rgb(70, 156, 0)';
+		divmusicgradeshide.style.display = 'none';
+		musicgradesbutton.innerHTML = 'Music Grades';
+	}
+}
+
+function collegeshow() {
+	if(divcollegehide.style.display == 'block') {
+		divcollegehide.style.display = 'none';
+		collegebutton.innerHTML = 'A-Levels';
+		collegebutton.style.backgroundColor = 'rgb(70, 156, 0)';
+	} else {
+		divcollegehide.style.display = 'block';
+		collegebutton.innerHTML = 'Collapse';
+		collegebutton.style.backgroundColor = 'darkkhaki';
+	}
+
+	if(secondarybutton.innerHTML == 'Collapse' || musicgradesbutton.innerHTML == 'Collapse') {
+		divsecondaryhide.style.display = 'none';
+		secondarybutton.innerHTML = 'GCSEs';
+		secondarybutton.style.backgroundColor = 'rgb(70, 156, 0)';
+
+		musicgradesbutton.style.backgroundColor = 'rgb(70, 156, 0)';
+		divmusicgradeshide.style.display = 'none';
+		musicgradesbutton.innerHTML = 'Music Grades';
+	}
+}
+
+function musicgradesshow() {
+	if(divmusicgradeshide.style.display == 'block') {
+		divmusicgradeshide.style.display = 'none';
+		musicgradesbutton.innerHTML = 'Music Grades';
+		musicgradesbutton.style.backgroundColor = 'rgb(70, 156, 0)';
+	} else {
+		divmusicgradeshide.style.display = 'block';
+		musicgradesbutton.innerHTML = 'Collapse';
+		musicgradesbutton.style.backgroundColor = 'darkkhaki';
+	}
+
+	if(collegebutton.innerHTML == 'Collapse' || secondarybutton.innerHTML == 'Collapse') {
+		divcollegehide.style.display = 'none';
+		collegebutton.innerHTML = 'A-Levels';
+		collegebutton.style.backgroundColor = 'rgb(70, 156, 0)';
+
+		secondarybutton.style.backgroundColor = 'rgb(70, 156, 0)';
+		divsecondaryhide.style.display = 'none';
+		secondarybutton.innerHTML = 'GCSEs';
 	}
 }

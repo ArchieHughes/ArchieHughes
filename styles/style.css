@@ -1,6 +1,13 @@
 body {
 	background-color: lightblue;
 	font-family: system-ui;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 #cvmain {
@@ -59,6 +66,7 @@ button {
 	border-radius: 5px;
 	border: 1px solid black;
 	padding: 5px;
+	transition: 150ms;
 }
 
 button:hover {
@@ -73,16 +81,21 @@ p {
 }
 
 h2 {
+	background-color: rgb(40, 45, 50);
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 70%;
 	text-align: left;
-	text-decoration: underline;
 	font-size: 16px;
 	text-transform: uppercase;
+	transition: 150ms;
 }
 
 h2:hover {
+	background-color: rgb(70, 75, 80);
 	cursor: pointer;
 }
 
@@ -136,7 +149,7 @@ h3 {
 	background-color: rgb(91, 91, 91);
 }
 
-#workbuttons, #skillsbuttons, #divdrumlessonhide, #divdayporterhide, #divasdahide, #divgymhide, #divmusichide, #divsurfinghide, #divdrumshide {
+#workbuttons, #skillsbuttons, #educationbuttons, #divdrumlessonhide, #divdayporterhide, #divasdahide, #divgymhide, #divmusichide, #divsurfinghide, #divdrumshide, #divsecondaryhide, #divmusicgradeshide, #divcollegehide {
 	display: none;
 }
 
@@ -150,6 +163,9 @@ h3 {
 }
 
 #questionimg:hover {
+	position: absolute;
+	top: 7px;
+	right: 7px;
 	cursor: pointer;
 	width: 25px;
 	height: 25px;
@@ -164,9 +180,20 @@ h3 {
 	display: none;
 	background-color: rgb(40, 45, 50);
 	color: white;
-	padding: 20px;
+	padding: 10px;
 	border-radius: 10px;
 	width: 50%;
+	max-width: 400px;
 	position: fixed;
 	z-index: 999;
+}
+
+footer {
+	font-size: 12px;
+	font-weight: bold;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	-webkit-transform: translate(-50%);
+	transform: translate(-50%);
 }
