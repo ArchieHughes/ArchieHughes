@@ -177,7 +177,7 @@ function gymshow() {
 		surfingbutton.innerHTML = 'Surfing';
 
 		drumsbutton.style.backgroundColor = 'rgb(70, 156, 0)';
-		divsurfinghide.style.display = 'none';
+		divdrumshide.style.display = 'none';
 		drumsbutton.innerHTML = 'Drumming';
 	}
 }
@@ -203,7 +203,7 @@ function musicshow() {
 		surfingbutton.innerHTML = 'Surfing';
 
 		drumsbutton.style.backgroundColor = 'rgb(70, 156, 0)';
-		divsurfinghide.style.display = 'none';
+		divdrumshide.style.display = 'none';
 		drumsbutton.innerHTML = 'Drumming';
 	}
 }
@@ -229,7 +229,7 @@ function surfingshow() {
 		musicbutton.innerHTML = 'Music';
 
 		drumsbutton.style.backgroundColor = 'rgb(70, 156, 0)';
-		divsurfinghide.style.display = 'none';
+		divdrumshide.style.display = 'none';
 		drumsbutton.innerHTML = 'Drumming';
 	}
 }
