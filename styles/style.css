@@ -125,6 +125,7 @@ h3 {
 }
 
 #left {
+	overflow: scroll;
 	width: 50%;
 	top: 140px;
 	bottom: 0;
@@ -172,6 +173,7 @@ h3 {
 }
 
 #navigate {
+	box-shadow: 0 0 30px black;
 	text-align: center;
 	left: 50%;
 	top: 50%;
