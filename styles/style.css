@@ -149,7 +149,7 @@ h3 {
 	background-color: rgb(91, 91, 91);
 }
 
-#workbuttons, #skillsbuttons, #educationbuttons, #divdrumlessonhide, #divdayporterhide, #divasdahide, #divgymhide, #divmusichide, #divsurfinghide, #divdrumshide, #divsecondaryhide, #divmusicgradeshide, #divcollegehide {
+#workbuttons, #skillsbuttons, #educationbuttons, #divdrumlessonhide, #divdayporterhide, #divasdahide, #divgymhide, #divmusichide, #divsurfinghide, #divdrumshide, #divsecondaryhide, #divmusicgradeshide, #divcollegehide, #divpersonalstatementhide {
 	display: none;
 }
 

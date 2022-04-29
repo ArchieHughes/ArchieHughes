@@ -86,6 +86,7 @@ function expandwork() {
 		closework();
 	} else {
 		workbuttons.style.display = 'block';
+		personalstatementhide.style.display = 'none';
 	}
 
 	if(skillsbuttons.style.display == 'block' || educationbuttons.style.display == 'block') {
@@ -104,6 +105,7 @@ function expandskills() {
 		closeskills();
 	} else {
 		skillsbuttons.style.display = 'block';
+		personalstatementhide.style.display = 'none';
 	}
 
 	if(workbuttons.style.display == 'block' || educationbuttons.style.display == 'block') {
@@ -120,6 +122,7 @@ function expandeducation() {
 		closeeducation();
 	} else {
 		educationbuttons.style.display = 'block';
+		personalstatementhide.style.display = 'none';
 	}
 
 	if(skillsbuttons.style.display == 'block' || workbuttons.style.display == 'block') {
@@ -376,5 +379,23 @@ function musicgradesshow() {
 		secondarybutton.style.backgroundColor = 'rgb(70, 156, 0)';
 		divsecondaryhide.style.display = 'none';
 		secondarybutton.innerHTML = 'GCSEs';
+	}
+}
+
+const personalstatementhide = document.getElementById('divpersonalstatementhide');
+const personalstatementbutton = document.getElementById('personalstatementbutton');
+
+function personalstatementshow() {
+	if(personalstatementhide.style.display == 'block') {
+		personalstatementhide.style.display = 'none';
+	} else {
+		closework();
+		closeskills();
+		closeeducation();
+
+		workbuttons.style.display = 'none';
+		skillsbuttons.style.display = 'none';
+		educationbuttons.style.display = 'none';
+		personalstatementhide.style.display = 'block';
 	}
 }
